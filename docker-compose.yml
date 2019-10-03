@@ -2,9 +2,10 @@ version: "2.0"
 
 services:
   gloc_box:
+    # TODO push to dockerhub
     image: justin2004/gloc_box
     build: .
-    #    user: "${USER}"
+#    user: "${USER}"
     environment:
       DISPLAY: ${DISPLAY}
     volumes:
@@ -13,3 +14,5 @@ services:
 # TODO i think if we can become the host's current user in the container
 #      using the .Xauthority file will allow us to not need `xhost +` in the host
       - "${PWD}:/mnt"
+
+# TODO files downloaded are owned by root
