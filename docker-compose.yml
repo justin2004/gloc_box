@@ -1,0 +1,15 @@
+version: "2.0"
+
+services:
+  gloc_box:
+    image: justin2004/gloc_box
+    build: .
+#    user: "${USER}"
+    environment:
+      DISPLAY: ${DISPLAY}
+    volumes:
+      - "/tmp/.X11-unix:/tmp/.X11-unix"
+#      - "~/.Xauthority:/root/.Xauthority"
+# TODO i think if we can become the host's current user in the container
+#      using the .Xauthority file will allow us to not need `xhost +` in the host
+      - "${PWD}:/mnt"
