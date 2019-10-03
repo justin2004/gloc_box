@@ -4,7 +4,7 @@ services:
   gloc_box:
     image: justin2004/gloc_box
     build: .
-#    user: "${USER}"
+    #    user: "${USER}"
     environment:
       DISPLAY: ${DISPLAY}
     volumes:

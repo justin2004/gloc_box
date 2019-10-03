@@ -2,16 +2,24 @@
 
 ## what
 
+- an easy to use docker wrapper for [gloc](https://github.com/jvolkening/gloc) a GNU/Linux Overdrive/EMusic Client
+
 ## why
+
 
 ## how
 
-- get an odm file
+0) use a GNU/Linux OS
 
-- run `xhost +`
+0) get an odm file (perhaps from your library)
 
-- `docker-compose up`
+0) run `xhost +`
 
-- gloc's GUI should appear
-    - press open and navigate to /mnt
+0) run `docker-compose up`
+
+    - gloc's GUI should appear
+        - press open and navigate to /mnt
         - that directory is shared with the host
+        - download your files
+
+0) run `xhost -`
