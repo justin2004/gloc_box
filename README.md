@@ -23,3 +23,8 @@
         - download your files
 
 0) run `xhost -`
+
+## notes/warnings
+- files downloaded are owned by root so you'll need sudo power to chown
+- the process runs as root inside the container
+    - https://docs.docker.com/engine/security/userns-remap/
