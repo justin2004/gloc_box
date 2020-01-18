@@ -6,7 +6,5 @@ RUN git clone https://github.com/jvolkening/gloc.git
 
 WORKDIR /gloc
 
-RUN ls -la
 RUN perl Makefile.PL && make
 CMD ./gloc
-
